@@ -1,115 +1,115 @@
 # DEMOWEBSHOP-_PROJECT
-# Demo Web Shop Application - Manual & Automation Testing (SDET Project)
+# 🛒 Demo Web Shop Application Testing - Manual & Automation  
 
-## Project Overview
-This repository contains the test scripts, test cases, and reports for testing the **Demo Web Shop Application**. This project was conducted individually as part of an **SDET (Software Development Engineer in Test)** initiative. The focus was on both **manual and automated testing** using **Cucumber with Selenium (POM model integration)**.  
+## 📌 Project Overview  
+This project involves testing the **Demo Web Shop** application using both **manual and automated testing**.  
+The primary focus is to ensure **functionality, usability, and reliability** across core e-commerce operations such as:  
 
-The testing covered core functionalities of the e-commerce platform, including:
-- **User Authentication** (Sign In, Login)
-- **Home Page Navigation**
-- **Product Search**
-- **Add to Cart Functionality**
-- **Checkout Process**
-- **Extent Reports Generation** for test execution reports
+- User Authentication (**Sign-up, Login, Logout**)  
+- Product Search  
+- Add to Cart & Checkout  
+- Payment Processing  
+- UI/UX Validation  
+- Bug Identification & Reporting  
 
----
-
-## 👩‍💻 Author
-**Puja Kumari** - QA Engineer  
-📧 puja291196m@gmail.com  
+Automated testing is implemented using **Cucumber with the Page Object Model (POM)** to enhance test structure and maintainability.  
 
 ---
 
-## 📌 Table of Contents
-- [Testing Scenarios](#testing-scenarios)
-- [Manual Testing](#manual-testing)
-- [Automated Testing with Selenium & Cucumber](#automated-testing-with-selenium--cucumber)
-- [Bug Reports](#bug-reports)
-- [Test Cases](#test-cases)
-- [Project Setup](#project-setup)
-- [Collaboration & Workflow](#collaboration--workflow)
-- [Conclusion](#conclusion)
+## 👩‍💻 Project Contributor  
+**Puja Kumari** - Individual Contributor (Manual & Automation Testing)  
 
 ---
 
-## ✅ Testing Scenarios
-The key testing scenarios include:  
-
-1. **Sign In & Login**  
-   - Test user authentication with valid and invalid credentials.  
-
-2. **Home Page Navigation**  
-   - Verify that all sections (Featured Products, Categories, etc.) load correctly.  
-
-3. **Product Search**  
-   - Ensure users can search for products and receive accurate results.  
-
-4. **Add to Cart**  
-   - Test that products can be added to the cart and reflected properly.  
-
-5. **Checkout Process**  
-   - Validate order completion, including payment and order summary generation.  
-
-6. **Extent Reports**  
-   - Generate detailed execution reports for test cases.  
+## 📂 Table of Contents  
+- [Mind Map](#-mind-map)  
+- [Test Plan](#-test-plan)  
+- [Test Summary](#-test-summary)  
+- [Test Scenarios](#-test-scenarios)  
+- [Manual Testing](#-manual-testing)  
+- [Automation Testing (Cucumber + POM)](#-automation-testing-cucumber--pom)  
+- [Bug Reports](#-bug-reports)  
+- [How to Set Up the Project](#-how-to-set-up-the-project)  
+- [Conclusion](#-conclusion)  
 
 ---
 
-## 📝 Manual Testing
-### 🔹 Test Case 1: Login with Valid Credentials  
-**Pre-condition:** User must have an existing account.  
-**Steps:**
-1. Navigate to the login page.  
-2. Enter valid credentials.  
-3. Click on "Login".  
-**Expected Result:** User should be redirected to the homepage successfully.  
+## 🧠 Mind Map  
+> 🎯 **Mind Map of Testing Strategy**  
+A **visual representation** of the test cases and test coverage strategy. 
 
-### 🔹 Test Case 2: Product Search  
-**Pre-condition:** Products exist in the database.  
-**Steps:**
-1. Enter a product name in the search bar.  
-2. Click on "Search".  
-**Expected Result:** Related products should be displayed.  
+## 📜 Test Plan  
+**Objective**: Ensure the stability, functionality, and performance of the **Demo Web Shop** application.  
 
-### 🔹 Test Case 3: Checkout Process  
-**Pre-condition:** User has at least one item in the cart.  
-**Steps:**
-1. Click on "Cart".  
-2. Proceed to checkout.  
-3. Enter payment and shipping details.  
-4. Confirm the order.  
-**Expected Result:** Order should be successfully placed with confirmation.  
+| Section | Details |  
+|---------|---------|  
+| **Scope** | Functional, UI, Regression, Smoke, and End-to-End Testing |  
+| **Tested Features** | Login, Registration, Product Search, Cart, Checkout |  
+| **Test Tools** | Selenium, Cucumber, Cypress, Jira |  
+| **Testing Types** | Manual & Automated Testing |  
+| **Bug Tracking** | Jira |  
+| **Test Reporting** | Extent Reports |  
 
 ---
 
-## 🤖 Automated Testing with Selenium & Cucumber
-### 🔹 Automated Test Cases
-Automated tests were written using:
-- **Selenium WebDriver** for browser automation  
-- **Cucumber** for Behavior-Driven Testing  
-- **POM (Page Object Model)** for better maintainability  
+## 📊 Test Summary
 
-### 🔹 Key Automated Tests:
-- **Login Test:** Verify login with valid/invalid credentials.  
-- **Product Search Test:** Ensure accurate product search results.  
-- **Cart Test:** Validate the cart functionality (adding/removing products).  
-- **Checkout Test:** Complete an end-to-end purchase flow.  
+---Detail and manual observation.
+
+## 📌 Test Scenarios  
+
+### **1️⃣ Login Test**  
+✔️ Valid & Invalid User Credentials  
+✔️ Remember Me Functionality  
+✔️ Password Reset Option  
+
+### **2️⃣ Product Search Test**  
+✔️ Search by Keyword  
+✔️ Filter & Sort Products  
+
+### **3️⃣ Cart Functionality Test**  
+✔️ Add/Remove Items from Cart  
+✔️ Update Cart Quantity  
+
+### **4️⃣ Checkout Process Test**  
+✔️ Guest & Registered User Checkout  
+✔️ Payment Gateway Validation  
+
+### **5️⃣ UI/UX Testing**  
+✔️ Button Clickability & Navigation  
+✔️ Page Responsiveness  
 
 ---
 
-## 🐞 Bug Reports
-| Bug ID | Description | Severity | Status |
-|--------|------------|----------|--------|
-| #001 | Login fails with valid credentials | High | Fixed |
-| #002 | Search does not return expected products | Medium | Fixed |
-| #003 | Checkout button unresponsive on some browsers | High | Fixed |
+## 📝 Manual Testing  
+
+### ✅ **Test Case 1: Login with Valid Credentials**  
+
+- **Steps**:  
+  1. Navigate to the **Login Page**.  
+  2. Enter a **valid email and password**.  
+  3. Click **Login**. 
+
+### ✅ **Test Case 2: Add Product to Cart**  
+  
+- **Steps**:  
+  1. Search for a **product**.  
+  2. Click on **"Add to Cart"**.  
+  3. Open the **Cart** and verify the product.    
 
 ---
 
-## ⚙️ Project Setup
-To run the automated tests locally:
+## 🤖 Automation Testing (Cucumber + POM)  
 
-### 🔹 Clone the Repository
+### 🔹 **Automated Test Cases**  
+✔️ **Login Test** (Valid & Invalid Cases)  
+✔️ **Product Search Test**  
+✔️ **Cart & Checkout Test**  
+
+### 🔹 **Project Setup**  
 ```sh
-git clone https://github.com/pujakumari/DemoWebShopTesting.git
-cd DemoWebShopTesting
+# Clone the repository
+git clone https://github.com/pujakumari/DemoWebShopTesting.git  
+cd DemoWebShopTesting  
+
+[Name - Puja Kumari]
